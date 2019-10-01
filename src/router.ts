@@ -17,6 +17,12 @@ const router = new Router({
       props: true,
       children: [
         {
+          path: 'followers',
+          name: 'followers',
+          component: () => import('./views/UserFollowers.vue'),
+          props: true
+        },
+        {
           path: 'projects',
           name: 'projects',
           component: () => import('./views/UserProjects.vue'),
