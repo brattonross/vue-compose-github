@@ -13,25 +13,31 @@ const router = new Router({
     {
       path: '/:username',
       name: 'user',
-      component: () => import('./views/UserProfile.vue'),
+      component: () => import('./views/user/UserProfile.vue'),
       props: true,
       children: [
         {
+          path: '/',
+          name: 'overview',
+          component: () => import('./views/user/UserOverview.vue'),
+          props: true
+        },
+        {
           path: 'followers',
           name: 'followers',
-          component: () => import('./views/UserFollowers.vue'),
+          component: () => import('./views/user/UserFollowers.vue'),
           props: true
         },
         {
           path: 'projects',
           name: 'projects',
-          component: () => import('./views/UserProjects.vue'),
+          component: () => import('./views/user/UserProjects.vue'),
           props: true
         },
         {
           path: 'repositories',
           name: 'repositories',
-          component: () => import('./views/UserRepositories.vue'),
+          component: () => import('./views/user/UserRepositories.vue'),
           props: true
         }
       ]

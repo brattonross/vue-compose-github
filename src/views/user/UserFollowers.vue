@@ -31,7 +31,7 @@
 import { createComponent } from '@vue/composition-api';
 import { usePromise } from 'vue-compose-promise';
 
-import GitHub from '../github';
+import GitHub from '../../github';
 
 export default createComponent({
   name: 'UserFollowers',
