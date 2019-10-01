@@ -6,6 +6,11 @@ const client = axios.create({
 
 const GitHub = {
   users: {
+    async followers(username: string) {
+      const { data } = await client.get(`/users/${username}/followers`);
+      return data;
+    },
+
     async orgs(username: string) {
       const { data } = await client.get(`/users/${username}/orgs`);
       return data;
