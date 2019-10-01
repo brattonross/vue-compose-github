@@ -47,12 +47,12 @@
 import { createComponent, ref } from '@vue/composition-api';
 import { usePromise } from 'vue-compose-promise';
 
-import GitHub from '../github';
-import TimeAgo from '../components/TimeAgo.vue';
-import UserRepoForks from '../components/user/UserRepoForks.vue';
-import UserRepoLanguage from '../components/user/UserRepoLanguage.vue';
-import UserRepoLicense from '../components/user/UserRepoLicense.vue';
-import { useRouter } from '../router';
+import GitHub from '../../github';
+import TimeAgo from '../../components/TimeAgo.vue';
+import UserRepoForks from '../../components/user/UserRepoForks.vue';
+import UserRepoLanguage from '../../components/user/UserRepoLanguage.vue';
+import UserRepoLicense from '../../components/user/UserRepoLicense.vue';
+import { useRouter } from '../../router';
 
 export default createComponent({
   name: 'UserRepositories',

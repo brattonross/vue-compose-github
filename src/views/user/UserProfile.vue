@@ -72,9 +72,9 @@ import { createComponent, computed, ref, watch } from '@vue/composition-api';
 import { LinkIcon, LocationIcon } from '@brattonross/vue-octicons';
 import { usePromise } from 'vue-compose-promise';
 
-import GitHub from '../github';
-import UserNav from '../components/user/UserNav.vue';
-import UserProfileLoader from '../components/user/loaders/UserProfileLoader.vue';
+import GitHub from '../../github';
+import UserNav from '../../components/user/UserNav.vue';
+import UserProfileLoader from '../../components/user/loaders/UserProfileLoader.vue';
 
 export default createComponent({
   name: 'UserProfile',

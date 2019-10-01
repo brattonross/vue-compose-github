@@ -44,7 +44,7 @@ import {
 } from '@brattonross/vue-octicons';
 import { usePromise } from 'vue-compose-promise';
 
-import GitHub from '../github';
+import GitHub from '../../github';
 
 export default createComponent({
   name: 'UserProjects',
